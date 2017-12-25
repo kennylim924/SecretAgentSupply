@@ -70,6 +70,10 @@ nav ul {
   list-style: none;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .products {
   display: flex;
   margin: 3rem 0 0 0;
@@ -123,4 +127,68 @@ footer {
   margin-top: 4rem;
   padding: 5rem 0;
   background-color: black;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .sunglasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 8.6rem;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .headline h4 {
+    font-size: 0.77em;
+  }
+
+  .headline h1 {
+    font-size: 1em;
+  }
+
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .info {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
